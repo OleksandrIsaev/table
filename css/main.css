@@ -86,18 +86,61 @@ h1{
 .products-menu>li{
     position: relative;
 }
+.teh_table{
+    display: table;
+    width: 100%;
+    background-color: #2a3644;
+    border-radius: 3px;
+}
+.teh_table a{
+    color: #fff;
+    text-decoration: none;
+}
+.teh_table li>a:hover{
+    color: #fd8612;
+    background-color: #3f4852;
+}
+.teh_table ul{
+    display: table-row;
+    list-style: none;
+}
+.teh_table li{
+    position: relative;
+    display: table-cell;
+    padding: 15px 20px;
+    border-right: 1px solid #3f4852;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+.teh_table :first-child{
+    border-radius: 3px 0 0 3px;
+}
+.teh_table :last-child{
+    border-radius: 0 3px 3px 0;
+}
+.double.sub{
+    padding-top: 10px;
+    width: 100%;
+}
 .sub{
     position: absolute;
     display: none;
     padding-top: 10px;
     width: 210px;
+    top: 100%;
+    left: 0;
     z-index: 1;
 }
 .sub ul{
+    float: left;
+    width: 210px;
+    padding: 0;
+    margin: 0;
     padding-left: 0;
-    background-color: #d2d4d5;
-    color: #2a3644;
     border-radius: 3px 3px 3px;
+    color: #2a3644;
+    background-color: #d2d4d5;
 }
 .sub ul :first-child{
     border-top: none;
@@ -271,9 +314,9 @@ a.home{
 }
 .style_table{
     display: table;
-    width: 100%;
-    background-color: #f2f2f2;  
+    width: 100%; 
     color: #666;
+    overflow: hidden;
 }
 .style_table p{
     display: table-row;
@@ -281,16 +324,47 @@ a.home{
 .style_table b{
     padding: 13px 20px 13px;
     display: table-cell;
-    background-color: #2a3644;
+    text-align: center;
+    text-decoration: none;
     color: #fff;
-    text-align: justify;
+    background-color: #2a3644;
+    font-family: "Arial";
+    font-weight: normal;
 }
 .style_table i{
+    text-decoration: none;
+    overflow: hidden;
     padding: 13px 20px 13px;
     display: table-cell;
     color: #2a3644;
-    background-color: #e8e8e8;
+    text-decoration: none;
     border-right: 1px solid #c0c1c2;
+    border-top: 1px solid #cdcddd;
+    font-weight: normal;
+    text-decoration: none;
+    background-color: #e8e8e8;
+}
+.style_table p :last-child{
+    border-right: none;
+}
+.style_table b:first-child{
+    border-radius: 3px 0 0 0;
+}
+.style_table b:last-child{
+    border-radius: 0 3px 0 0;
+}
+.border_bottom :first-child{
+    border-radius: 0 0 0 3px;
+}
+.border_bottom :last-child{
+    border-radius: 0 0 3px 0;
+}
+.style_table :nth-child(2n) i{
+    background-color: #f2f2f2;
+    color: #2a3644;
+}
+.right{
+    text-align: right;
 }
 
 
