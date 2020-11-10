@@ -93,10 +93,14 @@ h1{
     border-radius: 3px;
 }
 .teh_table a{
-    color: #fff;
+    padding: 14px;
+    display: block;
     text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
 }
-.teh_table li>a:hover{
+.teh_table a:hover{
     color: #fd8612;
     background-color: #3f4852;
 }
@@ -107,17 +111,19 @@ h1{
 .teh_table li{
     position: relative;
     display: table-cell;
-    padding: 15px 20px;
     border-right: 1px solid #3f4852;
     text-align: center;
     font-weight: bold;
     color: #fff;
 }
-.teh_table :first-child{
+.teh_table ul > li:first-child :hover{
     border-radius: 3px 0 0 3px;
 }
-.teh_table :last-child{
+.teh_table ul > li:last-child :hover{
     border-radius: 0 3px 3px 0;
+}
+.teh_table ul > li:last-child{
+    border: none;
 }
 .double.sub{
     padding-top: 10px;
@@ -343,6 +349,11 @@ a.home{
     font-weight: normal;
     text-decoration: none;
     background-color: #e8e8e8;
+    font-style: none;
+}
+.style_table p:hover i{
+    color: #2a3644;
+    background-color: #c0c1c2;
 }
 .style_table p :last-child{
     border-right: none;
