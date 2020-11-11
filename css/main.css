@@ -349,7 +349,7 @@ a.home{
     font-weight: normal;
     text-decoration: none;
     background-color: #e8e8e8;
-    font-style: none;
+    font-style: normal;
 }
 .style_table p:hover i{
     color: #2a3644;
